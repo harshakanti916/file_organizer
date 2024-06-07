@@ -26,17 +26,17 @@ def is_screenshot(file):
     name, ext = os.path.splitext(file)
     return (ext in img) and "screenshot" in name.lower()
 
-os.chdir("/Users/patrick/Desktop")
+os.chdir("/Users/hast/Desktop")
 
 for file in os.listdir():
     if is_audio(file):
-        shutil.move(file, "Users/patrick/Documents/audio")
+        shutil.move(file, "Users/hasht/Documents/audio")
     elif is_video(file):
-        shutil.move(file, "Users/patrick/Documents/video")
+        shutil.move(file, "Users/hasht/Documents/video")
     elif is_image(file):
         if is_screenshot(file):
-            shutil.move(file, "Users/patrick/Documents/screenshots")
+            shutil.move(file, "Users/hasht/Documents/screenshots")
         else:
-            shutil.move(file, "Users/patrick/Documents/images")
+            shutil.move(file, "Users/hasht/Documents/images")
     else:
-        shutil.move(file, "Users/patrick/Documents")
+        shutil.move(file, "Users/hasht/Documents")
