@@ -4,7 +4,7 @@ from pathlib import Path
 
 print(os.getcwd())
 
-os.chdir("/Users/patrick/Desktop/video-files")
+os.chdir("/Users/hasht/Desktop/Videos")
 print(os.getcwd())
 
 
